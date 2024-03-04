@@ -1,60 +1,141 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  header nav ul {
-    list-style-type: none;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #hero {
-    background-color: #f4f4f4;
+.portfolio-container {
+    background-color: #b9c8b2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation-bar,
+.footer-navigation {
+    background-color: #76946b;
+    display: flex;
+    width: 100%;
+    max-width: 1254px;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 60px;
+}
+
+.navigation-content,
+.welcome-section,
+.updates-section,
+.footer-navigation {
+    width: 100%;
+    max-width: 1039px;
+}
+
+.navigation-menu {
+    gap: 20px;
+    display: flex;
+}
+
+.portfolio-title,
+.navigation-link,
+.welcome-message,
+.sub-message,
+.updates-title,
+.updates-info-card {
+    font-family: Kanit, sans-serif;
+}
+
+.portfolio-title {
+    color: #41453f;
     text-align: center;
-    padding: 2rem;
-  }
-  
-  #hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  #about,
-  #projects,
-  #contact {
-    padding: 2rem;
-  }
-  
-  .project {
-    margin-bottom: 1rem;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.navigation-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-self: stretch;
+    font-size: 32px;
+    color: #000;
+    font-weight: 400;
+    white-space: nowrap;
     text-align: center;
-    padding: 1rem;
-  }
-  
+    margin: auto 0;
+}
+
+.welcome-section,
+.welcome-message-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.welcome-message {
+    font-size: 64px;
+}
+
+.sub-message {
+    margin-top: 69px;
+    font-size: 32px;
+}
+
+.updates-section,
+.updates-info {
+    display: flex;
+    gap: 20px;
+}
+
+.updates-title {
+    color: #000;
+    text-align: center;
+    align-self: center;
+    margin-top: 30px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.updates-info-card {
+    border-radius: 25px;
+    border: 1px solid #000;
+    background-color: #4f744c;
+    width: 255px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .navigation-bar,
+    .footer-navigation,
+    .welcome-section,
+    .updates-section {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .navigation-menu,
+    .welcome-message-container,
+    .updates-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+    }
+
+    .portfolio-title,
+    .welcome-message {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 40px;
+    }
+
+    .sub-message,
+    .updates-title {
+        margin-top: 40px;
+        white-space: initial;
+    }
+
+    .navigation-link,
+    .updates-info-card {
+        max-width: 100%;
+        margin-top: 15px;
+        flex-wrap: wrap;
+        white-space: initial;
+    }
+}  
