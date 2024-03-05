@@ -1,8 +1,29 @@
 .portfolio-container {
-    background-color: #b9c8b2;
+    background-color: #8b8f89;;
+}
+.home-container {
+    background-color:#ffffff;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+}
+.header-container {
+    background-color: #4f744c;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 250px;
+    padding-left: 1%;
+}
+.navigation-link,
+.navigation-container,
+.portfolio-title {
+    height: 250px;
+}
+.navigation-container {
+    background-color: #4f744c;
+    flex: 0.7;
+    flex-direction: column;
 }
 
 .navigation-bar,
@@ -16,126 +37,109 @@
     padding: 17px 60px;
 }
 
-.navigation-content,
-.welcome-section,
-.updates-section,
-.footer-navigation {
-    width: 100%;
-    max-width: 1039px;
-}
-
-.navigation-menu {
-    gap: 20px;
+.navigation-box{
     display: flex;
+    justify-content: flex-end;
+    flex: 0.5
+}
+.navigation-link {
+    display: flex;
+    justify-content:space-around;
+    flex: 0.6
+}
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    font-size: 32px;
+    color: #000;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .portfolio-title,
-.navigation-link,
-.welcome-message,
-.sub-message,
-.updates-title,
-.updates-info-card {
+.header-container,
+.welcome-container,
+.update-container {
     font-family: Kanit, sans-serif;
 }
 
 .portfolio-title {
     color: #41453f;
-    text-align: center;
+    text-align: justify;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
+    flex: 0.3;
 }
 
-.navigation-link {
+.welcome-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-self: stretch;
-    font-size: 32px;
+    flex-direction: row;
+}
+.welcome-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:0.5;
+}
+.welcome-header {
+    font-size: 45px;
+}
+.welcome-subheader {
+    font-size: 30px;
+    font-style: italic;
+}
+.welcome-right {
+    justify-content: center;
+    display: flex;
+    flex: 0.5;
+    margin: 0 auto;
+    height: auto;
+    width: 150%; 
+}
+.profile-image {
+    height: auto;
+    position: relative;
+    border-radius: 50%;
+}
+.update-container{
+    align-items: center;
+    height: 750px;
+}
+.update-header {
     color: #000;
-    font-weight: 400;
-    white-space: nowrap;
     text-align: center;
-    margin: auto 0;
-}
-
-.welcome-section,
-.welcome-message-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.welcome-message {
-    font-size: 64px;
-}
-
-.sub-message {
-    margin-top: 69px;
-    font-size: 32px;
-}
-
-.updates-section,
-.updates-info {
-    display: flex;
-    gap: 20px;
-}
-
-.updates-title {
-    color: #000;
-    text-align: center;
-    align-self: center;
     margin-top: 30px;
     white-space: nowrap;
     font-weight: 400;
     font-size: 40px;
 }
-
-.updates-info-card {
+.update-cards-container{
+    width: 100%;
+    overflow-x: auto;
+}
+.scroll-cards {
+    width: 120%;
+    flex-direction: row;
+    display: inline-flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #88a588;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
     border-radius: 25px;
     border: 1px solid #000;
     background-color: #4f744c;
-    width: 255px;
-    height: 240px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
 }
-
-@media (max-width: 991px) {
-    .navigation-bar,
-    .footer-navigation,
-    .welcome-section,
-    .updates-section {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
-    .navigation-menu,
-    .welcome-message-container,
-    .updates-info {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0px;
-    }
-
-    .portfolio-title,
-    .welcome-message {
-        max-width: 100%;
-        margin-top: 40px;
-        font-size: 40px;
-    }
-
-    .sub-message,
-    .updates-title {
-        margin-top: 40px;
-        white-space: initial;
-    }
-
-    .navigation-link,
-    .updates-info-card {
-        max-width: 100%;
-        margin-top: 15px;
-        flex-wrap: wrap;
-        white-space: initial;
-    }
-}  
