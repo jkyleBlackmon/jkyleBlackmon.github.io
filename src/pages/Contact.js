@@ -27,6 +27,24 @@ const Contact = () => {
         .catch((err) => console.error(err));
     };
 
+    const handleNameChange = (event) => {
+        const val = event.target.value;
+        setName(val);
+    };
+    const handleEmailChange = (event) => {
+        const val = event.target.value;
+        setEmail(val);
+    };
+    const handleMessageChange = (event) => {
+        const val = event.target.value;
+        setMessage(val);
+    }
+
+
+    useEffect(() => {
+        console.log(`Email: ${JSON.stringify(email)}\nName:${JSON.stringify(name)}\nMessage:${JSON.stringify(message)}`);
+    },[email, name, message]);
+
     return(
         <div className='contact-container'>
             <div className='contact-header'>
@@ -38,18 +56,18 @@ const Contact = () => {
                     <div className='contact-form-name-email'>
                         {/* NAME */}
                         <label for='name'>Name:</label>
-                        <input type='text' id='name' name='name' required/>
+                        <input type='text' id='name' name='name' onChange={handleNameChange} required/>
                         {/* EMAIL */}
                         <label for='email'>Email:</label>
-                        <input type='email' id='email' name='email' required/>
+                        <input type='email' id='email' name='email' onChange={handleEmailChange} required/>
                     </div>
                     <div className='contact-form-message'>
                         {/* MESSAGE */}
                         <label for='message'>Message:</label>
-                        <textarea id='message' name='message' rows='4' cols='100' required />                        
+                        <textarea id='message' name='message' rows='4' cols='100' onChange={handleMessageChange} required/>                        
                     </div>
                 </form>
-                <button className='submit'>
+                <button className='submit' onClick={submitContactRequest}>
                     <h3>Submit</h3>
                 </button>
             </div>
