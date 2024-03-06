@@ -1,16 +1,60 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import './Contact.css';
+
+const url = "https://script.google.com/macros/s/AKfycbytqDw5bp-6zufFgPyVrhXIJyP5Wev35v3q0uLABdSYHNKum7IPEqGOfRRjOhJ8wVJT/exec";
 
 
-export const Contact = () => {
+const Contact = () => {
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [message, setMessage] = useState('');
+
+    const submitContactRequest = () => {
+        const data = {
+            name: name,
+            email: email,
+            message: message
+        };
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/plain;charset=utf-8',
+            },
+            body: JSON.stringify(data)
+        })
+        .then((res) => res.json())
+        .then((data) => console.log('data', data))
+        .catch((err) => console.error(err));
+    };
+
     return(
-        <>
-            <h1>My Projects</h1>
-            <div>
-                <h2>In Progress</h2>
+        <div className='contact-container'>
+            <div className='contact-header'>
+                <h1>Contact Me</h1>
+                <h3>Enter your name and email below and let's chat!</h3>            
             </div>
-            <div>
-                <h2>Completed</h2>
+            <div className='contact-form-body'>
+                <form id='contact-form'>
+                    <div className='contact-form-name-email'>
+                        {/* NAME */}
+                        <label for='name'>Name:</label>
+                        <input type='text' id='name' name='name' required/>
+                        {/* EMAIL */}
+                        <label for='email'>Email:</label>
+                        <input type='email' id='email' name='email' required/>
+                    </div>
+                    <div className='contact-form-message'>
+                        {/* MESSAGE */}
+                        <label for='message'>Message:</label>
+                        <textarea id='message' name='message' rows='4' cols='100' required />                        
+                    </div>
+                </form>
+                <button className='submit'>
+                    <h3>Submit</h3>
+                </button>
             </div>
-        </>
+        </div>
     );
 };
+
+export { Contact };
