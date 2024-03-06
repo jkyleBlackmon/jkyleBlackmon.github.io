@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import profile from '../resources/profile.jpg';
 import './Home.css';
 import { ListItem } from '../components/list-item';
 
+import projects from '../resources/projects.json';
+
 export const Home = () => {
+    const [recents, setRecents] = useState([]);
+
+    const getRecentProjects = (x) => {
+        const last_i = projects.length-1;
+        const first_i = last_i-x+1;
+        let arr = [];
+        for(let index = first_i; index <= last_i; index++){
+            arr.push(projects[index]);
+        }
+        return arr;
+    };
+
+    useEffect(() => {
+        setRecents(getRecentProjects(3));
+    },[])
+
     return(
         <div className='home-container'>
             <div className="intro-container">
@@ -21,18 +39,13 @@ export const Home = () => {
                     <h1>What's New?</h1>
                 </div>
                 <div className="updates">
-                    <ListItem 
-                        title={'Hello'}
-                        body={'Lorem Ipsum'}
-                    />
-                    <ListItem 
-                        title={'World'}
-                        body={'Test Test'}
-                    />
-                    <ListItem 
-                        title={'!!!!!'}
-                        body={'LETS GOOO'}
-                    /> 
+                    {
+                        recents.map((obj) => {
+                            return(
+                                <ListItem title={obj.name} body={obj.details.description}/>
+                            );
+                        })
+                    }
                 </div>
             </div>
         </div>

@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Project 1",
+        "details": {
+            "primaryLanguage": "C/C++",
+            "secondaryLanguages": ["Python", "Ruby"],
+            "description": "insert long description",
+            "url": ""
+        }
+    },
+    {
+        "name": "x86/ARM Bootloader",
+        "details": {
+            "primaryLanguage": "C/C++",
+            "secondaryLanguages": [],
+            "description": "Makefile and bootloader program targeting both the x86 and ARM architectures",
+            "url": ""
+        }
+    },
+    {
+        "name": "Swole Gator",
+        "details": {
+            "primaryLanguage": "JavaScript / C++",
+            "secondaryLanguages": ["React-Native", "React"],
+            "description": "Front-end Android application and associated bluetooth device for tracking workouts using Velocity Based Training. Ideal for novice powerlifters.",
+            "url": "https://github.com/JoshRestuccia/SwoleGator"
+        }
+    },
+    {
+        "name": "AI Enabled Antique Phone",
+        "details": {
+            "primaryLanguage": "Python",
+            "secondaryLanguages": ["TensorFlow, Google Cloud"],
+            "description": "Novelty project to test my skills. Embedded Raspberry Pi, running an AI model through Python and TensorFlow.",
+            "url": ""
+        }
+    },
+    {
+        "name": "This Website!",
+        "details": {
+            "primaryLanguage": "JavaScript",
+            "secondaryLanguages": ["React"],
+            "description": "View the code for this website here. Uses React for frontend work and will eventually integrate some more advanced APIs",
+            "url": "https://github.com/jkyleBlackmon/jkyleBlackmon.github.io"
+        }
+    },
+    {
+        "name": "Swole Gator",
+        "details": {
+            "primaryLanguage": "JavaScript",
+            "secondaryLanguages": ["React-Native", "React"],
+            "description": "Front-end Android application and associated device for tracking workouts using Velocity Based Training. Ideal for novice powerlifters.",
+            "url": "https://github.com/JoshRestuccia/SwoleGator"
+        }
+    }
+]
