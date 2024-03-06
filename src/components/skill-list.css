@@ -1,0 +1,38 @@
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    background-color: rgb(177, 207, 197);
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    padding: 2%;
+}
+.skill-list-header {
+    flex: 0.2;
+    align-items: center;
+}
+
+.skill-list-header h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.skill-list-list {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-list-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skill-list-list h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}

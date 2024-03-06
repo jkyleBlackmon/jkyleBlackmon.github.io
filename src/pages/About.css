@@ -1,0 +1,48 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(162, 255, 224);
+}
+.about-bio{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.about-bio-header{
+    flex: 0.2;
+    align-content: center;
+}
+.about-bio-creds {
+   flex:0.3;
+}
+
+.about-bio-p {
+    display: inline;
+
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.about-hobbies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+}
+
+.about-hobbies-header {
+    flex: 0.2;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
