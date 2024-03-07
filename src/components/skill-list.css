@@ -1,15 +1,18 @@
 .skill-list {
-    display: flex;
-    flex-direction: column;
-    flex: 0.3;
-    background-color: rgb(177, 207, 197);
-    justify-content: space-between;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 2%;
-    padding: 2%;
+    display: block;
+    background-color: #415A77;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    align-self: center;
+    margin-bottom: 20px;
 }
+.skill-list:hover {
+    background-color: #0D1B2A;
+    color: #5BDAAD;
+}
+
 .skill-list-header {
-    flex: 0.2;
     align-items: center;
 }
 
@@ -20,8 +23,6 @@
 }
 
 .skill-list-list {
-    flex: 0.8;
-    display: flex;
     justify-content: center;
 }
 

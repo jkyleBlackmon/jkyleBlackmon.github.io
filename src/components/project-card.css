@@ -1,14 +1,18 @@
 .project-card-container {
     display: flex;
     flex-direction: row;
-    background-color: beige;
+    background-color: #778DA9;
+    color: #0D1B2A;
     margin: 2%;
     height: fit-content;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: inherit;
+    padding: 15px;
 }
 
 .project-card-header {
     flex: 0.4;
+    padding: 10px;
     align-self: center;
     text-align: center;
 }
@@ -44,16 +48,22 @@
 }
 
 .github-button {
+    flex: 0.2;
     align-self: center;
-    padding: 2%;
-    background-color: cadetblue;
-    color: antiquewhite;
-    border-radius: 30%;
-    width: 100px;
-    height: 75px;
+    padding:3%;
+    background-color: #415A77;
+    width: auto;
+    height: fit-content;
+    color: #415A77;
+    border-radius: 15px 15px 90px 15px;
+}
+.github-button h5 {
+    font-size: 15px;
+    color:#0D1B2A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .github-button:hover {
-    background-color: teal;
+    background-color: #5BDAAD;
     color: black;
 }

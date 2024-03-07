@@ -1,42 +1,28 @@
 .home-container {
     display: flex;
     flex-direction: column;
+    background-color: #1B263B;
 }
 
 .intro-container{
     display: flex;
     flex-direction: row;
-}
-.update-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: aquamarine;
-    padding: 5%;
-}
-.update-header{
-    text-align: center;
-    padding-bottom: 3%;
-}
-.update-header h1 {
-    font-size: 45px;
-    color: cadetblue;
-}
-
-.updates{
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-end;
-    min-height: max-content;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .left-side {
-    background-color: cadetblue;
-    flex: 0.6;
+    background-color: #778DA9;
+    flex: 0.4;
     justify-content: center;
     align-items: center;
     padding: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 100px 25px;
+}
+.left-side:hover{
+    background-color: #5BDAAD;
 }
 .left-side h1{
     font-size: 50px;
@@ -50,16 +36,48 @@
 .left-side h1, h2, h3{
     text-align: center;
 }
-
+.left-side h1, h2, h3:hover{
+    text-align: center;
+}
 .right-side {
-    flex: 0.4;
+    flex:0.35;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    background-color: #778DA9;
+    border-radius: 25px 100px;
+}
+
+.right-side:hover{
+    background-color: #5BDAAD;
 }
 
 .right-side img {
-    max-width: 75%;
-    max-height: 75%;
-    border-radius: 50%;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 25px 100px;
+}
+
+/* UPDATE CONTAINER STYLES*/
+
+.update-container{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #778DA9;
+    border-radius: 200px 200px 0px 0px;
+}
+.update-header{
+    text-align: center;
+}
+.update-header h1 {
+    font-size: 60px;
+    color: black;
+}
+
+.updates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

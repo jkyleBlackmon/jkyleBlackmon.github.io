@@ -2,16 +2,19 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: rgb(162, 255, 224);
+    background-color: #778DA9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .about-bio{
-    display: flex;
+    margin: 75px;
+    padding: 75px;
+    display: block;
     flex-direction: column;
-    padding: 5%;
-}
-.about-bio-header{
-    flex: 0.2;
-    align-content: center;
+    align-self: center;
+    background-color: #5BDAAD;
+    box-shadow: 0 10px 10px #0D1B2A;
+    border-radius: 150px 25px 150px 25px;
+    
 }
 .about-bio-creds {
    flex:0.3;
@@ -25,18 +28,13 @@
 .about-skills {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .about-hobbies {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 5%;
-}
-
-.about-hobbies-header {
-    flex: 0.2;
+    justify-content: space-evenly;
 }
 
 h2{

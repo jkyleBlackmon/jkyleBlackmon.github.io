@@ -1,29 +1,36 @@
 .list-item-container {
-    border: 1px solid #ccc;
+    border: 2px solid #0D1B2A;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #0D1B2A;
     overflow: hidden;
-    height: 300px;
-    width: 300px;
+    width: fit-content;
+    height: auto;
     margin: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .list-item-header {
-    background-color: #f0f0f0;
+    background-color: #5BDAAD;
+    color:#0D1B2A;
     padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #0D1B2A;
+}
+.list-item-header:hover{
+    background-color: #0D1B2A;
+    color:#5BDAAD;
 }
 
 .list-item-header h4 {
     margin: 0;
     text-align: center;
+    color: inherit;
+    font-size: 32px;
 }
-
 .list-item-body {
+    background-color: #778DA9;
     padding: 20px;
 }
-
 .list-item-body p {
     margin: 0;
     text-align: center;
+    font-size: 24px;
 }

@@ -2,24 +2,27 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: cadetblue;
+    background-color: #1B263B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact-header {
-    display: flex;
-    flex-direction: column;
+    flex: 0.5;
+    display: block;
     align-items: center;
-    padding-bottom: 5%;
+    padding: 75px;
+    margin: 50px;
+    background-color: #5BDAAD;
+    align-self: center;
+    border-radius: 150px 25px 150px 25px;
 }
 
 .contact-header h1 {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
 }
 .contact-header h3 {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     font-weight: lighter;
 }
@@ -27,7 +30,6 @@
 .contact-form-body{
     display: flex;
     flex-direction: column;
-    padding-bottom: 20%;
 }
 
 .contact-form-body form{
@@ -44,20 +46,54 @@
     flex-direction: column;
     flex:0.3;
 }
+.contact-form-name-email label {
+    color: #778DA9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.contact-form-name-email input {
+    padding: 10px;
+    border-radius: 5px 20px 5px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact-form-name-email input:focus{
+    border-color: #5BDAAD;
+    border-width: 5px;
+}
+
 .contact-form-message {
     padding: 2%;
     flex:0.3;
     justify-self: center;
 }
+.contact-form-message label {
+    color: #778DA9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.contact-form-message textarea {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px 5px 20px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .submit {
     align-self: center;
     width: 120px;
     height: fit-content;
-    background-color: teal;
-    border-radius: 15%;
+    background-color: #778DA9;
+    color:#1B263B;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 50px;
+}
+.submit:hover{
+    background-color: #5BDAAD;
 }
 .submit h3 {
     font-size: 15px;
     text-align: center;
-    font-weight: lighter;
+    font-weight: bold;
 }

@@ -64,7 +64,7 @@ const Contact = () => {
                     <div className='contact-form-message'>
                         {/* MESSAGE */}
                         <label for='message'>Message:</label>
-                        <textarea id='message' name='message' rows='4' cols='100' onChange={handleMessageChange} required/>                        
+                        <textarea id='message' name='message' rows='8' cols='50' onChange={handleMessageChange} required/>                        
                     </div>
                 </form>
                 <button className='submit' onClick={submitContactRequest}>

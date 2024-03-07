@@ -23,7 +23,7 @@ const ProjectCard = ({name, details}) => {
                 <p>{details.description}</p>
                 {details.url !== "" ? 
                     (   <button onClick={handleClick} className='github-button'>
-                            {`View on GitHub`}
+                            <h5>{`View on GitHub`}</h5>
                         </button> )
                     :
                     (   <h4>This project is not public</h4> )
