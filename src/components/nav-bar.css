@@ -1,53 +1,66 @@
+@font-face {
+    font-family: StampborRounded;
+    src: url('../resources/fonts/Stampbor-Rounded.otf') format("opentype");
+}
 .navbar {
     display: flex;
     background-color: #415A77;
     overflow: hidden;
     justify-content: flex-end;
+    border-bottom: 5px solid #87d4df;
 }
 .logo-container {
     flex: 1;
     display: flex;
-    height: 128px;
-    width: 335px;
-    padding: 0%;
-    margin: 2%;
+    height: 256px;
+    width: 670px;
+    padding: 0;
+    margin: 30px 30px;
 }
 .navigation-container {
     align-self: flex-end;
-    display: inline-flex;
+    display: flex;
 }
 
-.navbar ul {
+.navigation-container ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    font-size: 24px;
+    font-family: StampborRounded;
+    font-size: 30px;
 }
 
-.navbar ul li {
+.navigation-container ul li {
     float: right;
 }
 
-.navbar ul li a {
-    display: block;
-    color: #5BDAAD;
+.nav-element {
+    border: 5px solid #87d4df;
+    border-bottom: 0;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.navigation-container ul li a {
+    display: flex;
+    color: #87d4df;
     text-align: center;
-    padding: 14px 20px;
+    padding: 25px 35px;
     text-decoration: none;
     border-radius: 20px 20px 0px 0px;
 }
 
-.navbar ul li a:hover {
+.navigation-container ul li a:hover {
     background-color: #5BDAAD;
     color: #0D1B2A;
 }
 
-.navbar ul li a.active {
+.navigation-container ul li a.active {
     background-color:#1B263B;
+    color: #87d4df;
 }
 
-.navbar ul li a.active:hover {
+.navigation-container ul li a.active:hover {
     background-color: #5BDAAD;
+    color: #0D1B2A;
 }

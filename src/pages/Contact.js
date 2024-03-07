@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import toast from 'react-hot-toast';
+import { CustomToaster } from '../components/custom-toaster';
 import './Contact.css';
 
 const url = "https://script.google.com/macros/s/AKfycbytqDw5bp-6zufFgPyVrhXIJyP5Wev35v3q0uLABdSYHNKum7IPEqGOfRRjOhJ8wVJT/exec";
@@ -24,7 +26,8 @@ const Contact = () => {
         })
         .then((res) => res.json())
         .then((data) => console.log('data', data))
-        .catch((err) => console.error(err));
+        .catch((err) => toast.error(err));
+        toast.success("Live long and prosper!");
     };
 
     const handleNameChange = (event) => {
@@ -71,6 +74,7 @@ const Contact = () => {
                     <h3>Submit</h3>
                 </button>
             </div>
+            <CustomToaster/>
         </div>
     );
 };

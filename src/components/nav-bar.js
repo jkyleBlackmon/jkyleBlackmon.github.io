@@ -10,10 +10,11 @@ export const NavBar = () => {
             </div>
             <div className='navigation-container'>
                 <ul>
-                    <li><NavLink to='/projects'>Projects</NavLink></li>
-                    <li><NavLink to='/contact'>Contact</NavLink></li>
-                    <li><NavLink to='/about'>About</NavLink></li>
-                    <li><NavLink exact to='/'>Home</NavLink></li>
+                    <li>
+                        <NavLink className="nav-element" to='/projects'>Projects</NavLink></li>
+                    <li><NavLink className="nav-element" to='/contact'>Contact</NavLink></li>
+                    <li><NavLink className="nav-element" to='/about'>About</NavLink></li>
+                    <li><NavLink className="nav-element" exact to='/'>Home</NavLink></li>
                 </ul>
             </div>
         </div>

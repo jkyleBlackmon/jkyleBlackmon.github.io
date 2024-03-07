@@ -12,10 +12,10 @@
     width: 30%;
     align-self: center;
     padding: 2%;
-    background-color: #778DA9;
+    background-color: #5BDAAD;
     align-content: center;
     border-radius: 100px 25px 100px 25px;
-
+    box-shadow: 20px 20px 20px black;
 }
 .project-main-header h1{
     text-align: center;
@@ -30,7 +30,7 @@
     background-color: #5BDAAD;
     padding: 75px;
     border-radius: 150px 150px 0px 0px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .projects-container h2 {
     text-align: center;
@@ -41,22 +41,24 @@
 .in-progress-projs {
     margin-left: 25px;
     display: table;
-    flex:0.5;
+    flex:0.4;
     padding: 2%;
     align-self: flex-start;
     justify-content: space-around;
     background-color: #415A77;
     color: #5BDAAD;
     border-radius: 100px 25px 100px 25px;
+    box-shadow: 20px 20px 20px black;
 }
 .completed-projs {
     margin-left: 25px;
     display: table;
-    flex: 0.5;
+    flex: 0.4;
     padding: 2%;
     align-self: flex-start;
     justify-content: space-around;
     background-color: #415A77;
     color: #5BDAAD;
     border-radius: 25px 100px 25px 100px;
+    box-shadow: 20px 20px 20px black;
 }

@@ -1,3 +1,20 @@
+@font-face {
+    font-family: DoctorGlitch;
+    src: url('../resources/fonts/DoctorGlitch.otf') format("opentype");
+}
+@font-face {
+    font-family: CrackedCode;
+    src: url('../resources/fonts/CrackedCode.ttf') format("truetype");
+}
+@font-face {
+    font-family: Prisma;
+    src: url('../resources/fonts/Prisma.otf') format("opentype");
+}
+@font-face {
+    font-family: StampborRounded;
+    src: url('../resources/fonts/Stampbor-Rounded.otf') format("opentype");
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
@@ -8,30 +25,34 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .left-side {
-    background-color: #778DA9;
-    flex: 0.4;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 100px 25px;
-}
-.left-side:hover{
     background-color: #5BDAAD;
+    flex: 0.3;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 100px 25px 100px 25px;
+    box-shadow: 20px 20px 20px black;
 }
 .left-side h1{
-    font-size: 50px;
+    font-family: StampborRounded;
+    text-transform: uppercase;
+    font-size: 100px;
 }
 .left-side h2{
-    font-size: 30px;
+    font-size: 40px;
+    font-family: StampborRounded;
 }
 .left-side h3{
     font-size: 20px;
+    font-family: DoctorGlitch;
+
 }
 .left-side h1, h2, h3{
     text-align: center;
@@ -40,12 +61,14 @@
     text-align: center;
 }
 .right-side {
-    flex:0.35;
+    flex:0.4;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #778DA9;
     border-radius: 25px 100px;
+    box-shadow: 20px 20px 20px black;
 }
 
 .right-side:hover{
@@ -53,6 +76,7 @@
 }
 
 .right-side img {
+    margin: 40px;
     max-width: 90%;
     max-height: 90%;
     border-radius: 25px 100px;
@@ -70,6 +94,8 @@
 }
 .update-header{
     text-align: center;
+    font-family: CrackedCode;
+    text-transform: uppercase;
 }
 .update-header h1 {
     font-size: 60px;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import profile from '../resources/profile.jpg';
 import './Home.css';
 import { ListItem } from '../components/list-item';
+import { SocialLinks } from '../components/social-links';
 
 import projects from '../resources/projects.json';
 
@@ -26,12 +27,13 @@ export const Home = () => {
         <div className='home-container'>
             <div className="intro-container">
                 <div className='left-side'>
-                    <h1>Hey, I'm Kyle!</h1>
+                    <h1>Hey, I'm Kyl3!</h1>
                     <h3>Join me on my journey to</h3>
                     <h2>LEARN EVERYTHING</h2>
                 </div>
                 <div className='right-side'>
                     <img src={profile} alt="Profile" />
+                    <SocialLinks className="socials"/>
                 </div>
             </div>
             <div className="update-container">
