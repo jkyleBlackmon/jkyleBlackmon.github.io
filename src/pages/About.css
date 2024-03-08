@@ -1,16 +1,14 @@
 .about-container{
-    display: flex;
+    display:flex;
+    width:100%;
     flex-direction: column;
-    align-content: center;
     background-color: #778DA9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .about-bio{
     margin: 75px;
     padding: 75px;
-    display: block;
     flex-direction: column;
-    align-self: center;
     background-color: #5BDAAD;
     box-shadow: 0 10px 10px #0D1B2A;
     border-radius: 150px 25px 150px 25px;

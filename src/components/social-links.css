@@ -1,21 +1,26 @@
 .social-media-links {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding-bottom: 20px;
+    align-items: stretch;
+    margin: 20px;
 }
 
 .link {
-    margin-right: 10px; /* Adjust spacing between social media icons */
+    margin-inline: 40px; /* Adjust spacing between social media icons */
     cursor: pointer;
     display: flex;
     flex-direction: column;
 }
 
 .link img {
+    flex: 0.4;
     border-radius: 0;
     width: 64px; /* Adjust the width of the social media icons */
     height: 64px; /* Adjust the height of the social media icons */
+    background-color: #5BDAAD;
+    padding: 5px;
+    border: 5px solid #0D1B2A;
+    border-radius: 25%;
 }
 
 .link span {

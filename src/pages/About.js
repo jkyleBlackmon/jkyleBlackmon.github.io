@@ -9,7 +9,7 @@ const hardware_skills = ['VHDL', 'Altium PCB Design', 'C/C++'];
 
 const hobbies = ['Weightlifting', 'Crossword Puzzles', 'Sudoku', 'Baseball', 'The Orioles'];
 
-export const About = () => {
+const About = () => {
     return(
         <div className='about-container'>
             <div className='about-bio'>
@@ -35,3 +35,5 @@ export const About = () => {
         </div>
     );
 };
+
+export { About };

@@ -1,17 +1,16 @@
 .contact-container{
+    background-color: #1B263B;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    background-color: #1B263B;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .contact-header {
-    flex: 0.5;
+    flex:0.1;
     display: block;
-    align-items: center;
-    padding: 75px;
-    margin: 50px;
+    padding: 50px;
+    margin: 25px;
     background-color: #5BDAAD;
     align-self: center;
     border-radius: 150px 25px 150px 25px;
