@@ -13,13 +13,12 @@ export const Projects = () => {
             <div className='projects-container'>
                 <div className='in-progress-projs'>
                     <h2>In Progress</h2>
-                    <ProjectCard name={projects[2].name} details={projects[2].details}/>
                     <ProjectCard name={projects[3].name} details={projects[3].details}/>
                     <ProjectCard name={projects[4].name} details={projects[4].details}/>
                 </div>
                 <div className='completed-projs'>
                     <h2>Completed</h2>
-                    <ProjectCard name={projects[0].name} details={projects[0].details}/>
+                    <ProjectCard name={projects[2].name} details={projects[2].details}/>
                     <ProjectCard name={projects[1].name} details={projects[1].details}/>
                 </div>    
             </div>

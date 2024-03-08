@@ -3,10 +3,13 @@ import './nav-bar.css';
 import croplogo from '../resources/kyle-logo-crop.png';
 
 export const NavBar = () => {
+    const handleClick = () => {
+        window.open('/', '_blank');
+    };
     return(
         <div className='navbar'>
             <div className='logo-container'>
-                <img src={croplogo} alt='kyle-logo.png'/>
+                <img src={croplogo} alt='kyle-logo.png' onClick={handleClick}/>
             </div>
             <div className='navigation-container'>
                 <ul>

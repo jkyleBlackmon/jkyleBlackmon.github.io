@@ -14,7 +14,7 @@ const ProjectCard = ({name, details}) => {
                 <h1>{name}</h1>
                 <h3>{details.primaryLanguage}</h3>
                 {details.secondaryLanguages.length > 0 ? 
-                    (<h4>{`Frameworks: ${details.secondaryLanguages}`}</h4>)
+                    (<h4>{`${details.secondaryLanguages}`}</h4>)
                 :
                     (<br></br>)
                 }

@@ -12,6 +12,7 @@
 }
 .about-bio{
     width: 40%;
+    display: flex;
     margin: 50px auto;
     padding: 50px;
     flex-direction: column;
@@ -22,13 +23,40 @@
     box-shadow: 20px 20px 20px black;
     text-align: center;
 }
+.about-bio-resume-download {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    cursor: pointer;
+}
+.resume-icon {
+    height: 3.5vw;
+    width: 3.5vw;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    align-self: center;
+    background-color: #5BDAAD;
+}
 .about-bio h3 {
-    font-style: oblique;
     font-weight: 100;
+    font-size: 1.2vw;
+}
+.about-bio h4 {
+    font-weight: 100;
+    font-size: 0.8vw;
+    margin:0;
 }
 .about-bio p {
+    font-size: 1vw;
+    font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-inline: 50px;
+    margin: 0;
+    padding: 50px;
+    padding-bottom: 0;
+    padding-top: 20px;
 }
 
 .about-skills {
@@ -114,7 +142,7 @@
 }
 
 h2{
-    font-size: 40px;
+    font-size: 3vw;
     text-align: center;
 }
 p{

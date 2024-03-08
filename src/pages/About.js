@@ -3,17 +3,27 @@ import { SkillList } from '../components/skill-list';
 import { HobbyCard } from '../components/hobby-card';
 import './About.css';
 import aboutMe from '../resources/aboutme.json';
+import pdf_icon from '../resources/icons/pdf.png';
+import resume from '../resources/resume.pdf';
 
 const About = () => {
+    const downloadResume = () => {
+        console.log('Resume downloading...');
+    };
     return(
         <div className='about-container'>
             <div className='about-bio'>
                 <h2>About Me</h2>
-                <h3>B.S. Computer Engineering - University of Florida</h3>
+                <h3>{aboutMe.degree}</h3>
                 <p>{aboutMe.text}</p>
+                <div className='about-bio-resume-download' onClick={downloadResume}>
+                    <a href={resume} download="Blackmon_James_Kyle_Resume" target="_blank" rel="noreferrer"> 
+                        <img className='resume-icon' src={pdf_icon} alt='Resume.png'/>
+                        <h4>Download My Resume here!</h4>
+                    </a>
+                </div>
             </div>
             <div className='about-skills'>
-                {console.log(aboutMe.skills.hardware)}
                 <SkillList type={'Hardware'} skills={aboutMe['skills']['hardware']}/>
                 <SkillList type={'Software'} skills={aboutMe['skills']['software']}/>
             </div>
