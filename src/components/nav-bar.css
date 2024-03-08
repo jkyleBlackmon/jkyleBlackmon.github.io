@@ -5,6 +5,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
+    width: 100%;
     background-color: #415A77;
     overflow: hidden;
     justify-content: flex-start;

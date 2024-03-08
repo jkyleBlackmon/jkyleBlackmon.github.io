@@ -1,6 +1,6 @@
 .about-container{
     display:flex;
-    width:100%;
+    width: 100%;
     flex-direction: column;
     background-color: #778DA9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
