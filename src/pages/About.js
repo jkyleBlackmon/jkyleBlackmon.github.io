@@ -1,35 +1,48 @@
 import React from 'react';
 import { SkillList } from '../components/skill-list';
+import { HobbyCard } from '../components/hobby-card';
 import './About.css';
-
-const aboutMe = "Hello, and welcome to my website. Take a look around at some of the projects I have been working on lately!";
-
-const software_skills = ['HTML5', 'CSS', 'JavaScript', 'React'];
-const hardware_skills = ['VHDL', 'Altium PCB Design', 'C/C++'];
-
-const hobbies = ['Weightlifting', 'Crossword Puzzles', 'Sudoku', 'Baseball', 'The Orioles'];
+import aboutMe from '../resources/aboutme.json';
 
 const About = () => {
     return(
         <div className='about-container'>
             <div className='about-bio'>
-                <div className='about-bio-header'>
-                    <h2>About Me</h2>
-                </div>
-                <div className='about-bio-creds'>
-                    <h3>B.S. Computer Engineering - University of Florida</h3>
-                </div>
-                <div className='about-bio-p'>
-                    <p>{aboutMe}</p>
-                </div>
+                <h2>About Me</h2>
+                <h3>B.S. Computer Engineering - University of Florida</h3>
+                <p>{aboutMe.text}</p>
             </div>
             <div className='about-skills'>
-                <SkillList type={'Hardware'} skills={hardware_skills}/>
-                <SkillList type={'Software'} skills={software_skills}/>
+                {console.log(aboutMe.skills.hardware)}
+                <SkillList type={'Hardware'} skills={aboutMe['skills']['hardware']}/>
+                <SkillList type={'Software'} skills={aboutMe['skills']['software']}/>
             </div>
-            <div className='about-hobbies'>
-                <div className='about-hobbies-header'>
-                    <SkillList skills={hobbies} />
+            <div className='hobby-box'>
+                <div className='hobby-box-left'>
+                    <div className='hobby-list-header'>
+                        <h2>{`My Hobbies`}</h2>
+                    </div>
+                    <div className='hobby-list-list'>
+                        <ul>
+                            {aboutMe['hobbies'].map((hobby, index) => {
+                                return (
+                                    <li key={index}>
+                                        <h4>{hobby.name}</h4>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </div>
+                <div className='hobby-box-right'>
+                    <div className='hobby-card-row'>
+                        <HobbyCard hobby={aboutMe['hobbies'][0]}/>
+                        <HobbyCard hobby={aboutMe['hobbies'][1]}/>
+                    </div>
+                    <div className='hobby-card-row'>
+                        <HobbyCard hobby={aboutMe['hobbies'][2]}/>
+                        <HobbyCard hobby={aboutMe['hobbies'][3]}/>
+                    </div>
                 </div>
             </div>
         </div>

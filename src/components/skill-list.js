@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './skill-list.css';
 
 export const SkillList = ({type, skills}) => {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+    };
+
     return(
-        <div className='skill-list'>
+        <div className={`skill-list ${isClicked? "click": ""}`} onClick={handleClick}>
             <div className='skill-list-header'>
                 <h2>{type?(`${type} Skills`):(`My Hobbies`)}</h2>
             </div>

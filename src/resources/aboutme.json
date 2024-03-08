@@ -1,0 +1,25 @@
+{
+    "text": "Hello, my name is Kyle Blackmon. I will be graduating from the University of Florida in 2024. Now, I am exploring my creative side with passion projects such as the ones you'll find posted here. I hope to keep this website updated with all of my future projects and career milestones!",
+    "hobbies": [
+        {
+            "name": "Weightlifting",
+            "blurb": "What started out as a way to clear my mind after a rough patch, turned into a true passion. Checkout the Swole Gator app!"
+        },
+        {
+            "name": "Crossword Puzzles",
+            "blurb": "I used to do the NYT every weekend with my grandma. Created an IOS Shortcut to expedite googling the answers!"
+        },
+        {
+            "name": "Catan",
+            "blurb": "Recently picked up this board game and I fell in love! Amazing combination of strategy and luck that I could play for hours!"
+        },
+        {
+            "name": "Baseball",
+            "blurb": "I grew up playing baseball and have always loved the Underdog mentality of the Baltimore Orioles. The team is exciting this year. #Birdland"
+        }
+    ],
+    "skills":{
+        "hardware": ["VHDL", "Altium PCB Design", "C/C++"],
+        "software": ["HTML5", "CSS", "JavaScript", "React"]
+    }
+}
