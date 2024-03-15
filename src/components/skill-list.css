@@ -1,5 +1,7 @@
 .skill-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     background-color: #87d4df;
     margin: 50px;
     padding: 50px;
@@ -37,4 +39,21 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     font-weight: lighter;
+}
+
+@media (max-width: 650px){
+    .skill-list,
+    .skill-list.click{
+        flex-direction: row;
+    }
+    .skill-list-header{
+        text-align: center;
+        align-self: center;
+    }
+    .skill-list-header h2 {
+        font-size: 5vw;
+    }
+    .skill-list-list h4 {
+        font-size: 4vw;
+    }
 }

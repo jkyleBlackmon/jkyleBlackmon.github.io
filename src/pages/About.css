@@ -11,7 +11,7 @@
     font-family: StampborRounded;
 }
 .about-bio{
-    width: 40%;
+    width: 50%;
     display: flex;
     margin: 50px auto;
     padding: 50px;
@@ -31,8 +31,8 @@
     cursor: pointer;
 }
 .resume-icon {
-    height: 3.5vw;
-    width: 3.5vw;
+    height: 4vw;
+    width: 4vw;
     padding: 20px;
     padding-bottom: 10px;
     margin-top: 15px;
@@ -41,26 +41,26 @@
 }
 .about-bio h3 {
     font-weight: 100;
-    font-size: 1.2vw;
+    font-size: 2vw;
 }
 .about-bio h4 {
     font-weight: 100;
-    font-size: 0.8vw;
+    font-size: 1.5vw;
     margin:0;
 }
 .about-bio p {
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-inline: 50px;
     margin: 0;
-    padding: 50px;
+    padding-inline: 50px;
     padding-bottom: 0;
     padding-top: 20px;
 }
 
 .about-skills {
-    width: fit-content;
+    width: 80%;
     background-color: #415A77;
     /*background-image:repeating-radial-gradient(circle at left, #5BDAAD, #0D1B2A, #5BDAAD);*/
     border-radius: 100px 25px 100px 25px;
@@ -74,12 +74,11 @@
 
 .hobby-box {
     width: 75%;
-    height: auto;
     align-self: center;
     display: flex;
     background-color: #5BDAAD;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 50px;
     margin: 50px;
     font-family: StampborRounded;
     border-radius: 25px 100px 25px 100px;
@@ -120,8 +119,8 @@
 
 .hobby-box-right {
     flex: 1;
-    padding: 30px;
-    margin: 50px;
+    padding: 20px;
+    margin: 10px;
     display: flex;
     background-color: #0D1B2A;
     border-radius: 25px 100px 25px 100px;
@@ -130,15 +129,11 @@
     align-items: flex-start;
 }
 .hobby-card-row {
-    width: 87%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: space-evenly;
-}
-.hobby-box-right .hobby-card-row {
-    padding: 50px;
-    margin: 25px;
 }
 
 h2{
@@ -147,4 +142,57 @@ h2{
 }
 p{
     text-align: center;
+}
+
+@media (max-width: 650px) {
+    .about-bio h2{
+        font-size: 7vw;
+    }
+    .about-bio h3{
+        font-size: 3.5vw;
+    }
+    .about-bio h4{
+        font-size: 3.5vw;
+    }
+    .about-bio p{
+        font-size: 3vw;
+        padding-inline: 0;
+    }
+    .about-bio-resume-download h4 {
+        font-size: 2vw;
+    }
+    .about-bio-resume-download img {
+        height: 5vw;
+        width: 5vw;
+    }
+}
+@media (min-width: 1001px){
+    .about-bio h2 {
+        font-size: 3vw;
+    }
+    .about-bio h3 {
+        font-size: 1.5vw;
+    }
+    .about-bio h4 {
+        font-size: 1vw;
+    }
+    .about-bio p {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 1000px){
+    .about-skills {
+        flex-direction: column;
+        width: 75%
+    }
+    .hobby-box {
+        flex-direction: column;
+    }
+    .hobby-box-right {
+        justify-content: space-around;
+    }
+    .hobby-card-row {
+        flex-direction: column;
+    }
 }

@@ -15,6 +15,7 @@ const About = () => {
             <div className='about-bio'>
                 <h2>About Me</h2>
                 <h3>{aboutMe.degree}</h3>
+                <h4>{aboutMe.school}</h4>
                 <p>{aboutMe.text}</p>
                 <div className='about-bio-resume-download' onClick={downloadResume}>
                     <a href={resume} download="Blackmon_James_Kyle_Resume" target="_blank" rel="noreferrer"> 

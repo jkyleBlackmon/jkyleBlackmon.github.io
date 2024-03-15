@@ -22,5 +22,6 @@
         "hardware": ["VHDL", "Altium PCB Design", "C/C++"],
         "software": ["HTML5", "CSS", "JavaScript", "React"]
     },
-    "degree": "B.S. Computer Engineering - University of Florida"
+    "degree": "B.S. Computer Engineering",
+    "school": "University of Florida"
 }

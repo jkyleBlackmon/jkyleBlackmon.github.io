@@ -8,9 +8,9 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px #0D1B2A;
     overflow: hidden;
-    width: fit-content;
+    width: 100%;
     height: auto;
-    margin: 50px;
+    margin: 5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .list-item-header {
@@ -28,7 +28,7 @@
     font-family: StampborRounded;
     text-align: center;
     color: inherit;
-    font-size: 32px;
+    font-size: 2vw;
 }
 .list-item-body {
     background-color: #778DA9;
@@ -37,5 +37,18 @@
 .list-item-body p {
     margin: 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 650px){
+    .list-item-container{
+        width: 75%;
+        align-self: center;
+    }
+    .list-item-header h4 {
+        font-size: 4vw;
+    }
+    .list-item-body p {
+        font-size: 3vw;
+    }
 }

@@ -39,7 +39,7 @@
     margin: 0;
     padding: 0;
     font-family: StampborRounded;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 .navigation-container ul li {
@@ -75,4 +75,24 @@
 .navigation-container ul li a.active:hover {
     background-color: #5BDAAD;
     color: #0D1B2A;
+}
+
+@media (max-width: 1400px) {
+    .navigation-container ul{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .navigation-container ul li a {
+        border-radius: 20px 0px 0px 20px;
+        font-size: 24px;
+    }
+    .nav-element {
+        border: 5px solid #87d4df;
+    }
+}
+
+@media (max-width: 750px){
+    .navigation-container ul li a {
+        padding: 4vw;
+    }
 }

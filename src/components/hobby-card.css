@@ -31,7 +31,7 @@
 }
 .card {
     display: flex;
-    position: relatcive;
+    align-self: center;
     color: #5BDAAD;
     background-color: #415A77;
     border: 5px solid #5BDAAD;
@@ -88,4 +88,17 @@
 }
 .card.flip .front {
     visibility: hidden;
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 90%;
+        padding: 3vw;
+    }
+    .card .front h1 {
+        font-size: 3vw;
+    }
+    .card .back p {
+        font-size: 2.5vw;
+    }
 }
