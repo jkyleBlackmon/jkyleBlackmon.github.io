@@ -24,7 +24,7 @@
 .project-main-header h1{
     font-family: StampborRounded;
     text-align: center;
-    font-size: 50px;
+    font-size: 3vw;
     color: black;
 }
 
@@ -49,7 +49,10 @@
 
 .in-progress-projs,
 .completed-projs {
+    width: inherit;
     flex: 0.4;
+    display: flex;
+    flex-direction: column;
     padding: 30px;
     align-self: flex-start;
     align-content: center;
@@ -60,4 +63,27 @@
 
 .in-progress-projs{
     border-radius: 100px 25px 100px 25px;
+}
+
+@media (max-width: 650px) {
+    .project-main-header {
+        width: 60%;
+    }
+    .project-main-header h1 {
+        font-size: 5vw;
+    }
+    .projects-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 75%;
+    }
+    .projects-container h2 {
+        font-size: 6vw;
+    }
+    .in-progress-projs,
+    .completed-projs {
+        width: 85%;
+        margin-block: 20px;
+        border-radius: 75px;
+    }
 }

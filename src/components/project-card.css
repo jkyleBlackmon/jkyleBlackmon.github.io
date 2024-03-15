@@ -79,3 +79,13 @@
     color:#0D1B2A;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@media (max-width: 650px) {
+    .project-card-container{
+        width: 75%;
+        flex-direction: column;
+    }
+    .project-card-body p {
+        text-align: center;
+    }
+}
