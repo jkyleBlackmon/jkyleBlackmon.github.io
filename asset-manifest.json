@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a65a67a.css",
-    "main.js": "/static/js/main.c7714232.js",
+    "main.css": "/static/css/main.637e8dcb.css",
+    "main.js": "/static/js/main.224cfda2.js",
     "static/js/453.bbd1f349.chunk.js": "/static/js/453.bbd1f349.chunk.js",
     "static/media/profile.jpg": "/static/media/profile.bd8217ed8f2ee13edf5e.jpg",
     "static/media/DoctorGlitch.otf": "/static/media/DoctorGlitch.dba195ec081494ebf1e4.otf",
     "static/media/resume.pdf": "/static/media/resume.9e9ffeae3a7e92359eb9.pdf",
+    "static/media/kyle-logo.png": "/static/media/kyle-logo.3894e120c59365715fcf.png",
     "static/media/Stampbor-Rounded.otf": "/static/media/Stampbor-Rounded.ef8fd8aef6e61e493326.otf",
     "static/media/kyle-logo-crop.png": "/static/media/kyle-logo-crop.e1622ebfd4a2ecf31469.png",
     "static/media/Prisma.otf": "/static/media/Prisma.7e73b9046e8de7a424a0.otf",
     "static/media/CrackedCode.ttf": "/static/media/CrackedCode.b857e27c8ea2c2e65448.ttf",
     "index.html": "/index.html",
-    "main.1a65a67a.css.map": "/static/css/main.1a65a67a.css.map",
-    "main.c7714232.js.map": "/static/js/main.c7714232.js.map",
+    "main.637e8dcb.css.map": "/static/css/main.637e8dcb.css.map",
+    "main.224cfda2.js.map": "/static/js/main.224cfda2.js.map",
     "453.bbd1f349.chunk.js.map": "/static/js/453.bbd1f349.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a65a67a.css",
-    "static/js/main.c7714232.js"
+    "static/css/main.637e8dcb.css",
+    "static/js/main.224cfda2.js"
   ]
 }
