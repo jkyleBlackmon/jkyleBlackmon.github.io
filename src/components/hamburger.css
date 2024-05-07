@@ -1,0 +1,39 @@
+.hamburger-container {
+    align-self: center;
+    align-content: center;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .hamburger-container:hover .burger1 {
+    transform: translateY(-5px) rotate(45deg);
+  }
+  
+  .hamburger-container:hover .burger2 {
+    opacity: 0;
+  }
+  
+  .hamburger-container:hover .burger3 {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  
+  .burger {
+    width: 50px; /* Adjust width as needed */
+    height: 10px; /* Adjust height as needed */
+    background-color: #c36211;
+    border-radius: 50px;
+    margin: 5px;
+    transition: all 0.3s ease; /* Adding transition for smooth animation */
+  }
+  
+  @media (max-width: 750px) {
+    .hamburger {
+      align-self: center;
+      padding: 10px;
+      padding-right: 30px;
+    }
+  }

@@ -5,23 +5,22 @@
 .about-container{
     width: 100%;
     display:flex;
-    justify-self: center;
     flex-direction: column;
-    background-color: #0D1B2A;
+    background-color: #13919E;
     font-family: StampborRounded;
 }
 .about-bio{
-    width: 50%;
+    width: 60%;
     display: flex;
-    margin: 50px auto;
-    padding: 50px;
+    margin: 3vw;
+    padding: 3vw;
     flex-direction: column;
     align-self: center;
-    background-color: #5BDAAD;
-    box-shadow: 0 10px 10px #0D1B2A;
-    border-radius: 150px 25px 150px 25px;
-    box-shadow: 20px 20px 20px black;
+    background-color: #DE9050;
+    border-radius: 0.5vw;
+    border: 10px solid #095D67;
     text-align: center;
+    color: #151515;
 }
 .about-bio-resume-download {
     width: 30%;
@@ -31,13 +30,12 @@
     cursor: pointer;
 }
 .resume-icon {
-    height: 4vw;
-    width: 4vw;
-    padding: 20px;
-    padding-bottom: 10px;
+    height: 50px;
+    width: auto;
+    padding: 2vw;
     margin-top: 15px;
     align-self: center;
-    background-color: #5BDAAD;
+    background-color: #DE9050;
 }
 .about-bio h3 {
     font-weight: 100;
@@ -60,36 +58,36 @@
 }
 
 .about-skills {
-    width: 80%;
-    background-color: #415A77;
-    /*background-image:repeating-radial-gradient(circle at left, #5BDAAD, #0D1B2A, #5BDAAD);*/
-    border-radius: 100px 25px 100px 25px;
-    padding: 50px;
-    margin: 50px 150px;
     display: flex;
-    flex-direction: row;
+    width: 80%;
     align-self: center;
+    flex-direction: column;
+    background-color: #E4F3EF;
+    border: 10px solid #095D67;
+    border-radius: 1vw;
+    /*background-image:repeating-radial-gradient(circle at left, #5BDAAD, #0D1B2A, #5BDAAD);*/
     justify-content: space-evenly;
 }
 
 .hobby-box {
+    margin-block: 50px;
     width: 75%;
     align-self: center;
+    justify-content: space-evenly;
     display: flex;
-    background-color: #5BDAAD;
+    background-color: #DE9050;
+    border: 10px solid #C36211;
+    border-radius: 1vw;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
-    padding: 50px;
-    margin: 50px;
     font-family: StampborRounded;
-    border-radius: 25px 100px 25px 100px;
 }
 .hobby-box-left {
     flex: 0.25;
-    background-color: #87d4df;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 100px 25px 100px 25px;
-    padding: 30px;
-    margin: 50px;
+    background-color: #E4F3EF;
+    border: 10px solid #C36211;
+    border-radius: 1vw;
+    padding: 2vw;
+    margin: 3vw;
     align-self: center;
 }
 .hobby-list-header {
@@ -99,6 +97,7 @@
 
 .hobby-list-header h2 {
     font-size: 40px;
+    color: #151515;
 }
 
 .hobby-list-list {
@@ -109,6 +108,7 @@
     list-style-type: none;
     text-align: center;
     padding-right: 40px;
+    color: #151515;
 }
 
 .hobby-list-list h4 {
@@ -118,18 +118,17 @@
 }
 
 .hobby-box-right {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    background-color: #0D1B2A;
-    border-radius: 25px 100px 25px 100px;
+    flex: 0.75;
+    background-color: #C36211;
+    border-radius: 1vw;
+    padding: 2vw;
+    margin: 3vw;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 .hobby-card-row {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-self: center;
@@ -143,8 +142,13 @@ h2{
 p{
     text-align: center;
 }
+.note {
+    background-color: #13919E;
+    border: 0.25vw solid #095D67;
+    border-radius: 0.5vw;
+}
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .about-bio h2{
         font-size: 7vw;
     }
@@ -165,6 +169,18 @@ p{
         height: 5vw;
         width: 5vw;
     }
+    .about-skills{
+        width: 80%;
+        height: 30vh;
+    }
+    .about-skills h2 {
+        font-size: 5vw;
+    }
+    .hobby-box {
+        flex-direction: column;
+        width: 80%;
+        background-color: #DE9050;
+    }
 }
 @media (min-width: 1001px){
     .about-bio h2 {
@@ -178,21 +194,5 @@ p{
     }
     .about-bio p {
         font-size: 1.5vw;
-    }
-}
-
-@media (max-width: 1000px){
-    .about-skills {
-        flex-direction: column;
-        width: 75%
-    }
-    .hobby-box {
-        flex-direction: column;
-    }
-    .hobby-box-right {
-        justify-content: space-around;
-    }
-    .hobby-card-row {
-        flex-direction: column;
     }
 }

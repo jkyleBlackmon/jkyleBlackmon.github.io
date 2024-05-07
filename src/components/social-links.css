@@ -1,32 +1,38 @@
 .social-media-links {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    margin: 20px;
+    align-items:center;
+    margin: 1.25vw;
 }
-
 .link {
     margin-inline: 40px; /* Adjust spacing between social media icons */
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 1.25vw;
 }
 
 .link img {
-    flex: 0.4;
     border-radius: 0;
-    width: 64px; /* Adjust the width of the social media icons */
-    height: 64px; /* Adjust the height of the social media icons */
-    background-color: #5BDAAD;
+    width: 65%; /* Adjust the width of the social media icons */
+    height: 65%; /* Adjust the height of the social media icons */
+    background-color: #DE9050;
     padding: 5px;
-    border: 5px solid #0D1B2A;
+    border: 3px solid #151515;
     border-radius: 25%;
 }
 
+.link img:hover{
+    width: 85%;
+    height: 85%;
+    background-color: #C36211;
+    transition: 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
+}
+
 .link span {
-    flex: 0.2;
+    align-self: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     text-align: center;
     margin-left: 0; /* Adjust spacing between the icon and the name */
     font-size: 16px; /* Adjust the font size of the social media names */

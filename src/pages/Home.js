@@ -5,6 +5,8 @@ import { ListItem } from '../components/list-item';
 import { SocialLinks } from '../components/social-links';
 
 import projects from '../resources/projects.json';
+import arrow from '../resources/icons/32213.png';
+import { NavLink } from 'react-router-dom';
 
 export const Home = () => {
     const [recents, setRecents] = useState([]);
@@ -27,9 +29,15 @@ export const Home = () => {
         <div className='home-container'>
             <div className="intro-container">
                 <div className='left-side'>
-                    <h1>Hey, I'm Kyl3!</h1>
+                    <h1>Hey, I'm Kyle!</h1>
                     <h3>Join me on my journey to</h3>
                     <h2>LEARN EVERYTHING</h2>
+                    <NavLink to='/projects'>
+                        <div className='btn btn-one'>
+                            <span>View Projects</span>
+                            <img src={arrow} alt='arrow.png'/>
+                        </div>
+                    </NavLink>
                 </div>
                 <div className='right-side'>
                     <img src={profile} alt="Profile" />

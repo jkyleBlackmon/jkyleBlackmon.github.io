@@ -11,13 +11,17 @@ import './App.css';
 const App = () => {
   return (
     <>
-      <NavBar/>
-      <Routes>
-        <Route exact path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/projects' element={<Projects/>} />
-      </Routes>
+      <div className='header'>
+        <NavBar/>
+      </div>
+      <div className="content">
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/projects' element={<Projects/>} />
+        </Routes>
+      </div>
     </>
   );
 };
