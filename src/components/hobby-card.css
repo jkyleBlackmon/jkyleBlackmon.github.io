@@ -5,7 +5,7 @@
 .hobby-card-container{
     flex: 0.4;
     display: flex;
-    background-color: #87d4df;
+    background-color: #E4F3EF;
     border: 5px solid black;
     border-radius: 100px 25px 100px 25px;
     padding: 30px;
@@ -32,11 +32,10 @@
 .card {
     display: flex;
     align-self: center;
-    color: #5BDAAD;
-    background-color: #415A77;
-    border: 5px solid #5BDAAD;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 100px 25px 100px 25px;
+    color: #E4F3EF;
+    background-color: #13919E;
+    border: 10px solid #095D67;
+    border-radius: 1vw;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
@@ -81,10 +80,9 @@
     margin: 20px;
 }
 .card .back p {
-    color:#5BDAAD;
+    color:#E4F3EF;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1vw;
-    margin: 20px;
 }
 .card.flip .front {
     visibility: hidden;

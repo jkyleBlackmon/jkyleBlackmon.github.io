@@ -5,6 +5,12 @@ import './About.css';
 import aboutMe from '../resources/aboutme.json';
 import pdf_icon from '../resources/icons/pdf.png';
 import resume from '../resources/resume.pdf';
+import IconsList from '../components/icons-list';
+
+const hardware_skills = ["arduino.png", "cpp.png", "docker.png", "python.png", "vscode.png", "wireshark.png"];
+const software_skills = ["365.png", "android.png", "aws.png", "css3.png","gcp.png", "git.png", "github.png",
+                             "html5.png", "java.png", "jira.png", "js.png", "kotlin.png", "matlab.png", 
+                             "nodejs.png", "react-native.png", "reactjs.png", "teams.png"];
 
 const About = () => {
     const downloadResume = () => {
@@ -20,13 +26,13 @@ const About = () => {
                 <div className='about-bio-resume-download' onClick={downloadResume}>
                     <a href={resume} download="Blackmon_James_Kyle_Resume" target="_blank" rel="noreferrer"> 
                         <img className='resume-icon' src={pdf_icon} alt='Resume.png'/>
-                        <h4>Download My Resume here!</h4>
+                        <h4>Download My resume here</h4>
                     </a>
                 </div>
             </div>
             <div className='about-skills'>
-                <SkillList type={'Hardware'} skills={aboutMe['skills']['hardware']}/>
-                <SkillList type={'Software'} skills={aboutMe['skills']['software']}/>
+                <IconsList icons={hardware_skills} type={"Hardware"}/>
+                <IconsList icons={software_skills} type={"Software"}/>
             </div>
             <div className='hobby-box'>
                 <div className='hobby-box-left'>
@@ -43,6 +49,9 @@ const About = () => {
                                 );
                             })}
                         </ul>
+                    </div>
+                    <div className='note'>
+                        <p>Click on the cards to the right to learn more</p>
                     </div>
                 </div>
                 <div className='hobby-box-right'>
