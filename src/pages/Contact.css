@@ -6,21 +6,22 @@
 .contact-container{
     display: flex;
     flex-direction: column;
-    background-color: #1B263B;
-    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #13919E;
     font-family: StampborRounded;
 }
 
 .contact-header {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    margin: 50px;
+    padding: 3vw;
+    margin: 3vw;
     align-self: center;
     align-content: center;
-    background-color: #5BDAAD;
-    border-radius: 100px 25px 100px 25px;
-    box-shadow: 20px 20px 20px black;
+    background-color: #DE9050;
+    border-radius: 0.5vw;
+    border: 10px solid #095D67;
 }
 
 .contact-header h1 {
@@ -39,6 +40,8 @@
 .contact-form-body{
     display: flex;
     flex-direction: column;
+    align-self: center;
+    width: 70%;
 }
 
 .contact-form-body form{
@@ -50,35 +53,35 @@
 }
 
 .contact-form-name-email{
-    padding: 2%;
+    padding: 2vw;
     display: flex;
     flex-direction: column;
-    flex:0.3;
+    flex:0.4;
 }
 .contact-form-name-email label {
-    color: #778DA9;
+    color: #151515;
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
 }
 .contact-form-name-email input {
     padding: 10px;
-    border-radius: 5px 20px 5px 20px;
+    border-radius: 0.5vw;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .contact-form-name-email input:focus{
-    border-color: #5BDAAD;
+    border-color: #DE9050;
     border-width: 5px;
 }
 
 .contact-form-message {
-    padding: 2%;
-    flex:0.3;
+    padding: 2vw;
+    flex:0.4;
     justify-self: center;
 }
 .contact-form-message label {
-    color: #778DA9;
+    color: #151515;
     font-size: 24px;
     font-weight: bold;
     margin-top: 10px;
@@ -91,22 +94,28 @@
     box-sizing: border-box;         /* Opera/IE 8+ */
     padding: 10px;
     margin-top: 20px;
-    border-radius: 5px 20px 5px 20px;
+    border-radius: 0.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.contact-form-message textarea:focus {
+    border-color: #DE9050;
+    border-width: 5px;
+}
+
 .submit {
     align-self: center;
     width: 120px;
     height: fit-content;
-    background-color: #778DA9;
-    color:#1B263B;
-    border-radius: 20px 5px 20px 5px;
-    border-color: #5BDAAD;
+    background-color: #DE9050;
+    color:#151515;
+    border: 5px solid #095D67;
+    border-radius: 0.5vw;
     margin-bottom: 50px;
 }
 .submit:hover{
-    background-color: #5BDAAD;
-    border-color: #778DA9;
+    background-color: #C36211;
+    border: 5px solid #095D67;
 }
 .submit h3 {
     font-size: 15px;

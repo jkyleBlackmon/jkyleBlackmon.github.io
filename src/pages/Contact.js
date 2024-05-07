@@ -51,7 +51,7 @@ const Contact = () => {
     return(
         <div className='contact-container'>
             <div className='contact-header'>
-                <h1>Contact Me</h1>
+                <h1>Let's Connect!</h1>
                 <h3>Enter your name and email below and let's chat!</h3>            
             </div>
             <div className='contact-form-body'>
