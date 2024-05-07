@@ -4,7 +4,7 @@
 }
 
 .list-item-container {
-    border: 5px solid #0D1B2A;
+    border: 10px solid #C36211;
     border-radius: 8px;
     box-shadow: 0 2px 4px #0D1B2A;
     overflow: hidden;
@@ -14,14 +14,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .list-item-header {
-    background-color: #5BDAAD;
-    color:#0D1B2A;
+    background-color: #DE9050;
+    color:#151515;
     padding: 10px 20px;
     border-bottom: 5px solid #0D1B2A;
 }
 .list-item-header:hover{
-    background-color: #0D1B2A;
-    color:#5BDAAD;
+    background-color: #C36211;
+    color:#151515;
 }
 
 .list-item-header h4 {
@@ -31,8 +31,7 @@
     font-size: 2vw;
 }
 .list-item-body {
-    background-color: #778DA9;
-    padding: 20px;
+    padding: 2vh;
 }
 .list-item-body p {
     margin: 0;
@@ -40,7 +39,7 @@
     font-size: 1.5vw;
 }
 
-@media (max-width: 650px){
+@media (max-width: 750px){
     .list-item-container{
         width: 75%;
         align-self: center;
