@@ -5,38 +5,33 @@
 
 .project-main-container {
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
-    
-    background-color: #1B263B;
+    background-color: #13919E;
 }
 
 .project-main-header {
     width: 30%;
-    margin: 50px;
-    padding: 50px;
+    margin: 3vw;
+    padding: 3vw;
     align-self: center;
     align-content: center;
-    background-color: #5BDAAD;
-    border-radius: 100px 25px 100px 25px;
-    box-shadow: 20px 20px 20px black;
+    background-color: #DE9050;
+    border-radius: 0.5vw;
+    border: 10px solid #095D67;
 }
 .project-main-header h1{
     font-family: StampborRounded;
     text-align: center;
     font-size: 3vw;
-    color: black;
+    color: #151515;
 }
 
 .projects-container {
-    width: 75%;
-    padding: 50px;
-    margin-top: 50px;
+    width: 99%;
     align-self: center;
     display: flex;
     flex-direction: row;
-    background-color: #5BDAAD;
-    border-radius: 120px 120px 0px 0px;
     justify-content: space-evenly;
 }
 .projects-container h2 {
@@ -50,19 +45,16 @@
 .in-progress-projs,
 .completed-projs {
     width: inherit;
-    flex: 0.4;
     display: flex;
     flex-direction: column;
-    padding: 30px;
     align-self: flex-start;
     align-content: center;
-    background-color: #1B263B;
-    color: #5BDAAD;
-    border-radius: 25px 100px 25px 100px;
-}
-
-.in-progress-projs{
-    border-radius: 100px 25px 100px 25px;
+    background-color: #DE9050;
+    color: #151515;
+    border-radius: 0.5vw;
+    border: 10px solid #095D67;
+    padding: 3vw;
+    margin: 3vw;
 }
 
 @media (max-width: 650px) {

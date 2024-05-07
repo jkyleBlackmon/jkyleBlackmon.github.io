@@ -1,5 +1,4 @@
 import React from 'react';
-import { SkillList } from '../components/skill-list';
 import { HobbyCard } from '../components/hobby-card';
 import './About.css';
 import aboutMe from '../resources/aboutme.json';
@@ -51,7 +50,7 @@ const About = () => {
                         </ul>
                     </div>
                     <div className='note'>
-                        <p>Click on the cards to the right to learn more</p>
+                        <p>Click the cards on the right to learn more</p>
                     </div>
                 </div>
                 <div className='hobby-box-right'>
